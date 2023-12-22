@@ -1,0 +1,29 @@
+// prettier-ignore
+{
+  "extends": "@tsconfig/react-native/tsconfig.json",     /* Recommended React Native TSConfig base */
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": ["es2019"],
+    "jsx": "react-native",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "skipLibCheck": true,
+    "paths": {
+      "~/*": ["./*"],
+      "~/pages/*": ["./e2e/pages/*"],
+      "~/assertions/*": ["./e2e/assertions/*"],
+      "~/fixtures/*": ["./e2e/fixtures/*"],
+      "~/testutils/*": ["./e2e/utils/*"]
+    },
+    "types": ["react-native", "jest"],
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true
+  }
+}

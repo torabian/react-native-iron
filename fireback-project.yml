@@ -1,0 +1,75 @@
+license:
+  macIdentifier: ""
+service:
+  macIdentifier: com.pixelplux.appstarter
+  windowsIdentifier: com.pixelplux.appstarter
+  DebianIdentifier: appstarter
+log:
+  stderr: /tmp/appstarter-err.log
+  stdout: /tmp/appstarter-out.log
+publicServer:
+  enabled: true
+  port: "7000"
+  grpcPort: "7001"
+  host: localhost
+backOfficeServer:
+  enabled: false
+  port: "4501"
+  host: localhost
+database:
+  username: ""
+  port: ""
+  host: ""
+  password: ""
+  database: /Users/ali/work/appstarter/appstarter-project-database2.db
+  vendor: sqlite
+  dsn: ""
+mailServer:
+  provider: ""
+  apiKey: ""
+  senderName: ""
+  senderAddress: ""
+development:
+  forwardMails: ""
+  forwardMailsName: ""
+gin:
+  mode: production
+phoneNumberTemplates:
+  loginSms:
+    enabled: false
+    smsRedirectUrl: ""
+    subject: ""
+    templateFile: ""
+mailTemplates:
+  confirmMail:
+    enabled: false
+    emailRedirectUrl: ""
+    subject: ""
+    templateFile: ""
+  forgetPasswordRequest:
+    enabled: false
+    emailRedirectUrl: ""
+    subject: ""
+    templateFile: ""
+  acceptWorkspaceInvitation:
+    enabled: false
+    emailRedirectUrl: ""
+    subject: ""
+    templateFile: ""
+smartUI:
+  enabled: true
+  redirectOnSuccess: /auth?exchangeKey=%exchangeKey%
+  homeUrl: ""
+authentication:
+  google:
+    googleSigninEnabled: false
+    googleSigninClientId: ""
+    apiKey: ""
+headers:
+  access-control-allow-origin: '*'
+  access-control-allow-headers: Accept, Authorization, Content-Type, Content-Length,
+    X-CSRF-Token, Token, session, Origin, Host, Connection, Accept-Encoding, Accept-Language,
+    X-Requested-With, Workspace, Workspace-Id
+drive:
+  storage: fireback-file-storage
+  port: "7003"

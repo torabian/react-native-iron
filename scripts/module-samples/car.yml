@@ -1,0 +1,41 @@
+mockSource: ../../assets/mock-data/cars.json
+primaryKey: name
+fields:
+- name: name
+  type: string
+  label: Name
+  validators:
+    - required
+
+- name: miles_per_gallon
+  type: string
+  label: Miles_per_Gallon
+  validators:
+    - required
+- name: cylinders
+  type: number
+  label: Cylinders
+  validators:
+    - required
+- name: displacement
+  type: string
+  label: Displacement
+  validators:
+    - required
+- name: horsepower
+  type: string
+  label: Horsepower
+- name: weight_in_lbs
+  type: string
+  label: Weight_in_lbs
+- name: acceleration
+  type: string
+  label: Acceleration
+- name: year
+  type: string
+  label: Year
+- name: origin
+  type: string
+  label: Origin
+
+
